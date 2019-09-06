@@ -2,11 +2,11 @@
   <div class="layout">
     <header class="header">
       <strong>
-        <g-link to="/" class="fade-color">{{ $static.metaData.siteName }}</g-link>
+        <g-link to="/" class="text-fade">{{ $static.metaData.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="nav__link fade-color" to="/portfolio">Portfolio</g-link>
-        <g-link class="nav__link fade-color" to="/about">About</g-link>
+        <g-link class="nav__link text-fade" to="/portfolio">Portfolio</g-link>
+        <g-link class="nav__link text-fade" to="/about">About</g-link>
       </nav>
     </header>
     <slot/>
@@ -27,27 +27,14 @@ body {
   margin:0;
   padding:0;
   line-height: 1.5;
-
-  --background-color: #f4f6f9;
-  --color: #2D2D2D;
-  --fade-color: #a2a8b1;
-  --accent-color: #B22222;
   
 
-  background-color: var(--background-color);
-  color: var(--color);
+  background-color: theme('colors.background');
+  color: theme('colors.primary');
 }
 
 a {
   text-decoration: none;
-}
-
-.accent-color {
-  color: var(--accent-color);
-}
-
-.fade-color {
-  color: var(--fade-color);
 }
 
 .layout {
