@@ -1,5 +1,5 @@
 <template>
-  <div class="layout">
+  <div class="layout mb-20">
     <header class="header">
       <strong>
         <g-link to="/" class="text-fade">{{ $static.metaData.siteName }}</g-link>
