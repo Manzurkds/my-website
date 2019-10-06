@@ -2,7 +2,11 @@
   <div class="layout mb-20">
     <header class="header">
       <strong>
-        <g-link to="/" class="text-fade">{{ $static.metaData.siteName }}</g-link>
+        <g-link to="/" class="text-fade">
+          <img v-if="$route.path === '/'" class="w-8" src="~/../favicon.png" alt="Manzur Khan">
+          <img v-if="$route.path === '/portfolio'" class="w-8" src="~/../assets/icons/manzur-smart.png" alt="Manzur Khan">
+          <img v-if="$route.path === '/about'" class="w-8" src="~/../assets/icons/manzur-sceptical.png" alt="Manzur Khan">
+        </g-link>
       </strong>
       <nav class="nav">
         <g-link class="nav__link text-fade" to="/portfolio">Portfolio</g-link>
