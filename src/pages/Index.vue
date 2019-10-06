@@ -18,30 +18,10 @@
     <section class="mt-20">
       <h1 class="text-secondary">Find me on:</h1>
       <div class="sm:flex mt-5">
-        <a class="flex items-center mr-4 mb-4"
-          href="https://linkedin.com/in/manzurkds" target="_blank">
-          <g-image class="w-8 mr-1" alt="LinkedIn logo" src="~/assets/icons/linkedin.png" />
-          LinkedIn
-        </a>
-        <a class="flex items-center mr-4 mb-4"
-          href="https://github.com/manzurkds" target="_blank">
-          <g-image class="w-8 mr-1" alt="Github logo" src="~/assets/icons/github.png" />
-          GitHub
-        </a>
-        <a class="flex items-center mr-4 mb-4"
-          href="https://stackoverflow.com/users/6883002/manzur-khan" target="_blank">
-          <g-image class="w-8 mr-1" alt="Stackoverflow logo" src="~/assets/icons/stackoverflow.png" />
-          Stackoverflow
-        </a>
-        <a class="flex items-center mr-4 mb-4"
-          href="https://facebook.com/manzurkds" target="_blank">
-          <g-image class="w-8 mr-1" alt="Facebook logo" src="~/assets/icons/facebook.png" />
-          Facebook
-        </a>
-        <a class="flex items-center mr-4 mb-4"
-          href="https://twitter.com/manzurkds" target="_blank">
-          <g-image class="w-8 mr-1" alt="Twitter logo" src="~/assets/icons/twitter.png" />
-          Twitter
+        <a class="flex mr-4 mb-4" :class="socialPlatform.name" v-for="socialPlatform in socialPlatforms"
+          :href="socialPlatform.url" target="_blank">
+          <i class="im mr-1 text-accent" :class="socialPlatform.icon"></i>
+          <span>{{ socialPlatform.name }}</span>
         </a>
       </div>
     </section>
@@ -56,14 +36,94 @@
 
 <script>
 export default {
+  data: () => ({
+    socialPlatforms: [
+      {
+        name: 'LinkedIn',
+        url: 'https://linkedin.com/in/manzurkds',
+        icon: 'im-linkedin',
+        brandColor: '#0077b5'
+      },
+      {
+        name: 'Github',
+        url: 'https://github.com/manzurkds',
+        icon: 'im-github',
+        brandColor: '#333'
+      },
+      {
+        name: 'Stackoverflow',
+        url: 'https://stackoverflow.com/users/6883002/manzur-khan',
+        icon: 'im-stackoverflow',
+        brandColor: '#f48024'
+      },
+      {
+        name: 'Facebook',
+        url: 'https://facebook.com/manzurkds',
+        icon: 'im-facebook',
+        brandColor: '#3b5998'
+      },
+      {
+        name: 'Twitter',
+        url: 'https://twitter.com/manzurkds',
+        icon: 'im-twitter',
+        brandColor: '#1da1f2'
+      },
+    ]
+  }),
   metaInfo: {
     title: 'Home'
-  }
+  },
+  methods: {
+    test: function(socialPlatform) {
+      socialPlatform.hovered = true;
+      console.log('hovered is: ', this.socialPlatforms);
+    }
+  },
 }
 </script>
 
-<style>
+<style lang="scss">
 .home-links a {
   margin-right: 1rem;
+}
+.LinkedIn {
+  &:hover {
+    color: #0077b5;
+    .im {
+      color: #0077b5
+    }
+  }
+}
+.Github {
+  &:hover {
+    color: #333;
+    .im {
+      color: #333;
+    }
+  }
+}
+.Stackoverflow {
+  &:hover {
+    color: #f48024;
+    .im {
+      color: #f48024;
+    }
+  }
+}
+.Facebook {
+  &:hover {
+    color: #3b5998;
+    .im {
+      color: #3b5998;
+    }
+  }
+}
+.Twitter {
+  &:hover {
+    color: #1da1f2;
+    .im {
+      color: #1da1f2;
+    }
+  }
 }
 </style>
