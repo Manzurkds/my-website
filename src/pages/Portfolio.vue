@@ -7,7 +7,7 @@
         Commutatus
         </a>
       </h1>
-      <div class="flex flex-wrap justify-between project-container mt-20">
+      <div class="flex flex-wrap justify-between project-container sm:mt-20">
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
         href="https://www.aiesec.org" target="_blank">
           <figure class="relative project-card__figure">
@@ -98,11 +98,17 @@ export default {
 }
 
 .project-card {
-  &:nth-child(even) {
-    padding-top: 30px;
+  @media screen and (min-width: 640px) {
+    &:nth-child(even) {
+      padding-top: 30px;
+    }
+    &:nth-child(odd) {
+      margin-top: -30px;
+    }
   }
-  &:nth-child(odd) {
-    margin-top: -30px;
+
+  @media screen and (max-width: 640px) {
+    margin-bottom: 20px;
   }
 
   &__figure {
