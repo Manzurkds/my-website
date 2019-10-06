@@ -65,7 +65,7 @@
             </div>
           </figure>
           <p class="text-secondary">Web App</p>
-            <p>Ragya - Web platform</p>
+            <p>Ragya - Web platform (In progress)</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
         href="https://staging.ragya.com" target="_blank">
