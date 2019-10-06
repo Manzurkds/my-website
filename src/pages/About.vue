@@ -11,7 +11,7 @@
       <g-image class="w-full mt-8 sm:w-64" alt="Manzur Khan" src="~/assets/images/manzur-imagica.jpg" />
     </div>
     <div class="mt-20">
-      <h1 class="text-secondary">This is the MRI scan of my brain when decoded with utf-8</h1>
+      <h1 class="text-secondary">This is the MRI scan of my brain when formatted as utf-8</h1>
       <g-image class="w-full mt-8 m-auto sm:w-8/12" alt="Manzur Khan" src="~/assets/images/skills-map-light.jpg" />
     </div>
   </Layout>
