@@ -88,41 +88,41 @@ export default {
 }
 .LinkedIn {
   &:hover {
-    color: #0077b5;
     .im {
-      color: #0077b5
+      color: #0077b5;
+      transition: 0.2s ease-in;
     }
   }
 }
 .Github {
   &:hover {
-    color: #333;
     .im {
       color: #333;
+      transition: 0.2s ease-in;
     }
   }
 }
 .Stackoverflow {
   &:hover {
-    color: #f48024;
     .im {
       color: #f48024;
+      transition: 0.2s ease-in;
     }
   }
 }
 .Facebook {
   &:hover {
-    color: #3b5998;
     .im {
       color: #3b5998;
+      transition: 0.2s ease-in;
     }
   }
 }
 .Twitter {
   &:hover {
-    color: #1da1f2;
     .im {
       color: #1da1f2;
+      transition: 0.2s ease-in;
     }
   }
 }
