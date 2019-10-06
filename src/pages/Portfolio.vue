@@ -67,6 +67,18 @@
           <p class="text-secondary">Web App</p>
             <p>Ragya - Web platform</p>
         </a>
+        <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
+        href="https://staging.ragya.com" target="_blank">
+          <figure class="relative project-card__figure" :style="{background: 'white'}">
+            <g-image alt="AIESEC Logo" class="project-card__image" :style="{height: '75px'}"
+            src="~/assets/icons/aiesec-uk.png" />
+            <div class="project-card__overlay">
+              A dedicated payment portal for AIESEC UK exchange partners.
+            </div>
+          </figure>
+          <p class="text-secondary">Web App</p>
+            <p>AIESEC UK Payments Portal</p>
+        </a>
       </div>
     </div>
   </Layout>
