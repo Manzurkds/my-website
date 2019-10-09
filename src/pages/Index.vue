@@ -12,7 +12,7 @@
       </section>
 
       <aside>
-        <g-image class="w-80 mt-8 sm:w-64" alt="Manzur Khan" src="~/assets/images/manzur.jpg" />
+        <g-image class="w-80 mt-8 sm:w-64" alt="Manzur Khan" src="~/assets/images/manzur.webp" />
       </aside>
     </section>
     <section class="mt-20">

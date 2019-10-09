@@ -3,9 +3,9 @@
     <header class="header">
       <strong>
         <g-link to="/" class="text-fade">
-          <img v-if="$route.path === '/'" class="w-8" src="~/../favicon.png" alt="Manzur Khan">
-          <img v-if="$route.path === '/portfolio'" class="w-8" src="~/../assets/icons/manzur-smart.png" alt="Manzur Khan">
-          <img v-if="$route.path === '/about'" class="w-8" src="~/../assets/icons/manzur-sceptical.png" alt="Manzur Khan">
+          <img v-if="$route.path === '/'" class="w-8" src="~/../assets/icons/manzur-smiling.webp" alt="Manzur Khan">
+          <img v-if="$route.path === '/portfolio'" class="w-8" src="~/../assets/icons/manzur-smart.webp" alt="Manzur Khan">
+          <img v-if="$route.path === '/about'" class="w-8" src="~/../assets/icons/manzur-sceptical.webp" alt="Manzur Khan">
         </g-link>
       </strong>
       <nav class="nav">
