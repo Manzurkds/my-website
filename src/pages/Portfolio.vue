@@ -9,7 +9,7 @@
       </h1>
       <div class="flex flex-wrap justify-between project-container sm:mt-20">
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://www.aiesec.org" target="_blank">
+        href="https://www.aiesec.org" target="_blank" rel="noopener">
           <figure class="relative project-card__figure">
             <g-image alt="AIESEC Logo" class="project-card__image" src="~/assets/images/aiesec.jpg" />
             <div class="project-card__overlay">
@@ -20,7 +20,7 @@
             <p>AIESEC - Youth Opportunity Portal</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://partners.aiesec.org" target="_blank">
+        href="https://partners.aiesec.org" target="_blank" rel="noopener">
           <figure class="relative project-card__figure">
             <g-image alt="AIESEC Logo" class="project-card__image" src="~/assets/images/aiesec.jpg" />
             <div class="project-card__overlay">
@@ -31,7 +31,7 @@
             <p>AIESEC - Parter Opportunity Portal</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://institutions.educatly.com" target="_blank">
+        href="https://institutions.educatly.com" target="_blank" rel="noopener">
           <figure class="relative project-card__figure">
             <g-image alt="Educatly Logo" class="project-card__image" src="~/assets/icons/ed-wordmark.svg" />
             <div class="project-card__overlay text-sm" :style="{top: 0}">
@@ -44,7 +44,7 @@
             <p>Educatly - Institutions Platform</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://circularapparel.co" target="_blank">
+        href="https://circularapparel.co" target="_blank" rel="noopener">
           <figure class="relative project-card__figure">
             <g-image alt="CAIF Logo" class="project-card__image" :style="{width: '200px', height: '100px'}"
             src="~/assets/icons/caif-logo.svg" />
@@ -56,7 +56,7 @@
             <p>CAIF - Circular Apparel Innovation Factory</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://staging.ragya.com" target="_blank">
+        href="https://staging.ragya.com" target="_blank" rel="noopener">
           <figure class="relative project-card__figure">
             <g-image alt="CAIF Logo" class="project-card__image" :style="{height: '100px'}"
             src="~/assets/icons/ragya-logo.png" />
@@ -68,7 +68,7 @@
             <p>Ragya - Web platform (In progress)</p>
         </a>
         <a class="w-full mt-8 sm:w-5/12 cursor-pointer project-card"
-        href="https://staging.ragya.com" target="_blank">
+        href="https://staging.ragya.com" target="_blank" rel="noopener">
           <figure class="relative project-card__figure" :style="{background: 'white'}">
             <g-image alt="AIESEC Logo" class="project-card__image" :style="{height: '75px'}"
             src="~/assets/icons/aiesec-uk.png" />
